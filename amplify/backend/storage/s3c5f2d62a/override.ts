@@ -4,4 +4,5 @@ export function override(resources: AmplifyS3ResourceTemplate) {
     resources.s3Bucket.accelerateConfiguration = {
         accelerationStatus: 'Enabled'
     }
+    resources.s3Bucket.accessControl = 'AwsExecRead'
 }
